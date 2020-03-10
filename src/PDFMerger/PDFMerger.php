@@ -14,6 +14,7 @@ namespace Webklex\PDFMerger;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
 use setasign\Fpdi\Fpdi;
 
 class PDFMerger
@@ -154,7 +155,7 @@ class PDFMerger
     public function addString($string, $pages = 'all', $orientation = null)
     {
 
-        $filePath = storage_path('tmp/' . str_random(16) . '.pdf');
+        $filePath = storage_path('tmp/' . Str::random(16) . '.pdf');
         $this->oFilesystem->put($filePath, $string);
         $this->tmpFiles->push($filePath);
 

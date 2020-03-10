@@ -11,7 +11,7 @@
 Via Composer
 
 ``` bash
-$ composer require webklex/laravel-pdfmerger
+$ composer require derrickleemy/laravel-pdfmerger
 ```
 
 ## Setup
@@ -109,6 +109,7 @@ If you discover any security related issues, please email github@webklex.com ins
 ## Credits
 
 - [Webklex][link-author]
+- [derrickleemy][link-contributor]
 - All Contributors
 
 ## License
@@ -122,9 +123,11 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/Webklex/laravel-pdfmerger.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/Webklex/laravel-pdfmerger.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/Webklex/laravel-pdfmerger
+[link-packagist]: https://packagist.org/packages/derrickleemy/laravel-pdfmerger
 [link-travis]: https://travis-ci.org/Webklex/laravel-pdfmerger
 [link-scrutinizer]: https://scrutinizer-ci.com/g/Webklex/laravel-pdfmerger/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/Webklex/laravel-pdfmerger
-[link-downloads]: https://packagist.org/packages/Webklex/laravel-pdfmerger
+[link-downloads]: https://packagist.org/packages/derrickleemy/laravel-pdfmerger
 [link-author]: https://github.com/webklex
+[link-contributor]: https://github.com/derrickleemy
+

@@ -12,7 +12,7 @@
 
 namespace Webklex\PDFMerger;
 
-use FPDI;
+use setasign\Fpdi\Fpdi;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Collection;
 
@@ -42,9 +42,9 @@ class PDFMerger {
     /**
      * The actual PDF Service
      *
-     * @var FPDI
+     * @var Fpdi
      */
-    protected $oFPDI = FPDI::class;
+    protected $oFPDI = Fpdi::class;
 
     /**
      * The final file name
@@ -59,7 +59,7 @@ class PDFMerger {
      */
     public function __construct(Filesystem $oFilesystem){
         $this->oFilesystem = $oFilesystem;
-        $this->oFPDI = new FPDI();
+        $this->oFPDI = new Fpdi();
         $this->tmpFiles = collect([]);
 
         $this->init();
@@ -76,13 +76,13 @@ class PDFMerger {
     }
 
     /**
-     * Initialize a new internal instance of FPDI in order to prevent any problems with shared resources
+     * Initialize a new internal instance of Fpdi in order to prevent any problems with shared resources
      * Please visit https://www.setasign.com/products/fpdi/manual/#p-159 for more information on this issue
      *
      * @return self
      */
     public function init(){
-        $this->oFPDI = new FPDI();
+        $this->oFPDI = new Fpdi();
         $this->aFiles = collect([]);
         return $this;
     }
